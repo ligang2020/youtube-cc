@@ -7,22 +7,22 @@ https://raw.githubusercontent.com/ligang2020/youtube-cc/main/Youtube_CC.conf#rep
 添加mitm的hostname
 www.youtube.com
 
-// 重写，简体；
+#// 重写，简体；
 https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=en.+?((?!&tlang=zh\-Hans).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=zh-Hans HTTP/1.1$1
-// 重写，繁体
+#// 重写，繁体
 https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=en.+?((?!&tlang=zh\-Hant).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=zh-Hant HTTP/1.1$1
-//重写，自定义
+#//重写，自定义
 https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=待翻译语种.+?((?!&tlang=目标语种).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=目标语种 HTTP/1.1$1
 
 
-#     ISO 639-1代码表是为语言分类的设计的一套标准代码
+#  ISO 639-1代码表是为语言分类的设计的一套标准代码
    zh 中文
    ja 日本语言
    KO 韩语
    更多语言：https://zh.wikipedia.org/wiki/ISO_639-1代码表
 
 
-有多需求的，可以订阅设置
+#有多需求的，可以订阅设置
 需配合资源解析器
 
 提示lang=xxx可以自行抓包替换
