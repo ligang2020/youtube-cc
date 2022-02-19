@@ -31,7 +31,7 @@ https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=待翻译语种.+?((?!&tlang=
 https://raw.githubusercontent.com/ligang2020/youtube-cc/main/Youtube_CC.conf#replace=lang\=en@lang=
 
 # 只翻译日语为中文
-https://raw.githubusercontent.com/ligang2020/youtube-cc/main/Youtube_CC.conf#replace=lang\=en@lang=jp
+https://raw.githubusercontent.com/ligang2020/youtube-cc/main/Youtube_CC.conf#replace=lang\=en@lang=j
 
 以此类推
 
